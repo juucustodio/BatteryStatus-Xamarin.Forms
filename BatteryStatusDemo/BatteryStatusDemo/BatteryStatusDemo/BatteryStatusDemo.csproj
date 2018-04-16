@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Xam.Plugin.Battery" Version="3.0.1" />
     <PackageReference Include="Xamarin.Forms" Version="2.5.1.444934" />
   </ItemGroup>
 

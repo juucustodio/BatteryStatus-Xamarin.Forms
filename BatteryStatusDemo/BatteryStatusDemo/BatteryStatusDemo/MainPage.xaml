@@ -4,8 +4,11 @@
              xmlns:local="clr-namespace:BatteryStatusDemo"
              x:Class="BatteryStatusDemo.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout VerticalOptions="Center" 
+                 HorizontalOptions="Center" >
+        <Label x:Name="RemainingChargePercent"/>
+        <Label x:Name="Status"/>
+        <Label x:Name="PowerSource"/>
+    </StackLayout>
 
 </ContentPage>

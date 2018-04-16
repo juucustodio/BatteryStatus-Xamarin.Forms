@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Plugin.Battery;
 using Xamarin.Forms;
 
 namespace BatteryStatusDemo
@@ -12,6 +8,10 @@ namespace BatteryStatusDemo
 		public MainPage()
 		{
 			InitializeComponent();
-		}
+
+		    RemainingChargePercent.Text = "RemainingChargePercent: " + CrossBattery.Current.RemainingChargePercent + " %";
+		    Status.Text = "Status: " + CrossBattery.Current.Status;
+		    PowerSource.Text = "PowerSource: " + CrossBattery.Current.PowerSource;
+        }
 	}
 }
